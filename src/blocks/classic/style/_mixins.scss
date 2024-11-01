@@ -1,0 +1,60 @@
+@mixin sogrid-classic {
+
+    .sogrid--classic{
+        display: block;
+        color: #494949;
+
+        .sogrid__posts{
+            display: block;
+        }
+
+        .sogrid__entry{
+            display: flex;
+            padding: 0 0 30px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #f1f1f1;
+
+            &:last-child{
+                border-bottom: 0;
+            }
+        }
+
+        .sogrid__entry__thumbnail{
+            flex: 1;
+        }
+
+        .sogrid__entry__content{
+            flex: 2;
+            padding: 0 1.5em;
+        }
+
+    }
+
+}
+
+@mixin sogrid-classic-breakpoits {
+    
+    @media all and (max-width: $mobile) {
+        
+        .sogrid--classic{
+            
+            .sogrid__entry{
+                flex-wrap: wrap;
+            }
+
+            .sogrid__entry__content,            
+            .sogrid__entry__thumbnail{
+                flex: 0 1 auto;
+                flex-basis: 100%;
+                max-width: 100%;
+            }
+            
+            .sogrid__entry__content{
+                padding-left: 0;
+                padding-right: 0;
+                padding-top: 20px;
+            }            
+        }
+        
+    }
+}

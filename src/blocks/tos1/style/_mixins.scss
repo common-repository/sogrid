@@ -1,0 +1,166 @@
+@mixin sogrid-tos1 {
+
+    .sogrid--tos1{
+        font-size: 16px;
+        color: #494949;
+        
+        .sogrid__posts{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .sogrid__entry{
+            display: flex;
+            padding: 0 15px;
+            flex-basis: 100%;
+            max-width: 100%;
+        }
+
+        .sogrid__entry__thumbnail{
+            display: block;
+            margin-bottom: 1em;
+            flex-basis: 100%;
+            max-width: 100%;
+        }
+
+        .sogrid__entry__content{
+            flex-basis: 100%;
+            max-width: 100%;
+            padding: 0 15px;
+        }
+
+        .sogrid__two,        
+        .sogrid__others{
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid #cccccc;
+        }
+
+        .sogrid__two{
+            .sogrid__entry{
+                display: block;
+                padding: 15px;
+            }
+        }
+
+        .sogrid__others{
+            border-top: 0;
+            border-bottom: 0;
+
+            .sogrid__entry{
+                font-size: 0.9em;
+                border-bottom: 1px solid #cccccc;
+                margin-bottom: 0;
+                padding: 15px 0 15px 15px;   
+            }
+
+            .sogrid__entry__thumbnail{
+                flex: 1;
+            }
+    
+            .sogrid__entry__content{
+                flex: 2;
+            }
+            
+            .sogrid__entry__categories,
+            .sogrid__entry__readmore,            
+            .sogrid__entry__author,            
+            .sogrid__entry__excerpt{
+                display: none;
+            }
+
+        }
+
+        .sogrid__pagination{
+            border: 1px solid #cccccc;
+        }
+
+        .sogrid__pagination.__pos_bottom{
+            border-top: 0;
+        }
+
+        .sogrid__pagination.__pos_top{
+            border-bottom: 0;
+        }
+    }
+
+}
+
+@mixin sogrid-tos1-editor-breakpoints {
+
+    .sogrid--tos1[data-desktop="2"]{
+        .sogrid__two{
+            .sogrid__entry{
+                flex-basis: 50%;
+                max-width: 50%;
+            }
+        }
+
+        .sogrid__others{
+            .sogrid__entry{
+                flex-basis: 50%;
+                max-width: 50%;
+            }
+        }
+    }
+
+}
+
+@mixin sogrid-tos1-breakpoints {
+
+    @media all and (min-width: $mobile) {
+        .sogrid--tos1[data-mobile="2"]{
+            .sogrid__two{
+                .sogrid__entry{
+                    flex-basis: 50%;
+                    max-width: 50%;
+                }
+            }
+    
+            .sogrid__others{
+                .sogrid__entry{
+                    flex-basis: 50%;
+                    max-width: 50%;
+                }
+            }
+        }
+    }
+
+    @media all and (min-width: $tablet) {
+        .sogrid--tos1[data-tablet="2"]{
+            .sogrid__two{
+                .sogrid__entry{
+                    flex-basis: 50%;
+                    max-width: 50%;
+                }
+            }
+    
+            .sogrid__others{
+                .sogrid__entry{
+                    flex-basis: 50%;
+                    max-width: 50%;
+                }
+            }
+        }
+    }
+
+    @media all and (min-width: $desktop) {
+        .sogrid--tos1[data-desktop="2"]{
+            .sogrid__two{
+                .sogrid__entry{
+                    flex-basis: 50%;
+                    max-width: 50%;
+                }
+            }
+    
+            .sogrid__others{
+                .sogrid__entry{
+                    flex-basis: 50%;
+                    max-width: 50%;
+                }
+            }
+        }
+    }
+
+}
+

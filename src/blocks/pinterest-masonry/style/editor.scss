@@ -1,0 +1,9 @@
+//
+// Editor Style
+// 
+
+@import 'mixins';
+
+@include sogrid-pinterest-masonry();
+
+@include sogrid-pinterest-masonry-editor-breakpoints();

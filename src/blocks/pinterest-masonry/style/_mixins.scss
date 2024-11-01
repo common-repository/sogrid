@@ -1,0 +1,179 @@
+@mixin sogrid-pinterest-masonry {
+
+    .sogrid--pinterest-masonry{
+        color: #494949;
+
+        .sogrid__posts{
+            position: relative;
+        }
+
+        .sogrid__entry{
+            position: relative;
+            display: block; /** fixes column-count height issue **/
+            width: 100%; /** fixes column-count height issue **/
+            padding: 0; /** fixes column-count height issue **/
+            margin-bottom: 30px;
+            border-radius: 3px;
+            break-inside: avoid;
+            overflow: hidden; /** fixes button issue goes right/left **/
+        }
+
+        .sogrid__entry__wrapper{
+            background-color: white;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        .sogrid__entry__thumbnail_wrapper{
+            padding: 20px;
+            border-bottom: 1px solid #e8e8e8;
+        }
+
+        .sogrid__entry__thumbnail{
+            display: block;
+            margin-bottom: 0;
+        }
+
+        .sogrid__entry__content{
+            padding: 20px;
+            background-color: #FAFAFA;
+        }
+
+        .sogrid__entry__categories{
+            color: #494949;
+        }
+
+        .sogrid__entry__meta{
+            color: #494949;
+        }
+
+        .sogrid__entry__title a{
+            color: #191919;
+        }
+
+        .sogrid__entry__excerpt{
+            margin-top: 1.3em;
+        }
+
+    }
+
+}
+
+@mixin sogrid-pinterest-masonry-editor-breakpoints {
+    
+    .sogrid--pinterest-masonry[data-desktop="1"] .sogrid__posts{
+        column-gap: unset;
+        column-count: 1;
+    }
+    
+    .sogrid--pinterest-masonry[data-desktop="2"] .sogrid__posts{
+        column-count: 2;
+        column-gap: 30px; /** fixes column-count height issue **/
+    }
+    
+    .sogrid--pinterest-masonry[data-desktop="3"] .sogrid__posts{
+        column-count: 3;
+        column-gap: 30px; /** fixes column-count height issue **/
+    }
+
+    .sogrid--pinterest-masonry[data-desktop="4"] .sogrid__posts{
+        column-count: 4;
+        column-gap: 30px; /** fixes column-count height issue **/
+    }
+
+    .sogrid--pinterest-masonry[data-desktop="5"] .sogrid__posts{
+        column-count: 5;
+        column-gap: 30px; /** fixes column-count height issue **/
+    }
+
+}
+
+@mixin sogrid-pinterest-masonry-breakpoints {
+
+    @media all and (min-width: $mobile) {
+
+        .sogrid--pinterest-masonry[data-mobile="1"] .sogrid__posts{
+            column-gap: unset;
+            column-count: 1;
+        }
+
+        .sogrid--pinterest-masonry[data-mobile="2"] .sogrid__posts{
+            column-count: 2;
+            column-gap: 30px; /** fixes column-count height issue **/
+        }
+        
+        .sogrid--pinterest-masonry[data-mobile="3"] .sogrid__posts{
+            column-count: 3;
+            column-gap: 30px; /** fixes column-count height issue **/
+        }
+    
+        .sogrid--pinterest-masonry[data-mobile="4"] .sogrid__posts{
+            column-count: 4;
+            column-gap: 30px; /** fixes column-count height issue **/
+        }
+    
+        .sogrid--pinterest-masonry[data-mobile="5"] .sogrid__posts{
+            column-count: 5;
+            column-gap: 30px; /** fixes column-count height issue **/
+        }
+    
+    }
+
+    @media all and (min-width: $tablet) {
+
+        .sogrid--pinterest-masonry[data-tablet="1"] .sogrid__posts{
+            column-gap: unset;
+            column-count: 1;
+        }
+
+        .sogrid--pinterest-masonry[data-tablet="2"] .sogrid__posts{
+            column-count: 2;
+            column-gap: 30px; /** fixes column-count height issue **/
+        }
+        
+        .sogrid--pinterest-masonry[data-tablet="3"] .sogrid__posts{
+            column-count: 3;
+            column-gap: 30px; /** fixes column-count height issue **/
+        }
+    
+        .sogrid--pinterest-masonry[data-tablet="4"] .sogrid__posts{
+            column-count: 4;
+            column-gap: 30px; /** fixes column-count height issue **/
+        }
+    
+        .sogrid--pinterest-masonry[data-tablet="5"] .sogrid__posts{
+            column-count: 5;
+            column-gap: 30px; /** fixes column-count height issue **/
+        }
+
+    }
+
+    @media all and (min-width: $desktop) {
+
+        .sogrid--pinterest-masonry[data-desktop="1"] .sogrid__posts{
+            column-gap: unset;
+            column-count: 1;
+        }
+
+        .sogrid--pinterest-masonry[data-desktop="2"] .sogrid__posts{
+            column-count: 2;
+            column-gap: 30px; /** fixes column-count height issue **/
+        }
+        
+        .sogrid--pinterest-masonry[data-desktop="3"] .sogrid__posts{
+            column-count: 3;
+            column-gap: 30px; /** fixes column-count height issue **/
+        }
+    
+        .sogrid--pinterest-masonry[data-desktop="4"] .sogrid__posts{
+            column-count: 4;
+            column-gap: 30px; /** fixes column-count height issue **/
+        }
+    
+        .sogrid--pinterest-masonry[data-desktop="5"] .sogrid__posts{
+            column-count: 5;
+            column-gap: 30px; /** fixes column-count height issue **/
+        }
+        
+    }
+
+}

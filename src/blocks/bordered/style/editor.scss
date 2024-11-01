@@ -1,0 +1,9 @@
+//
+// Editor Style
+// 
+
+@import 'mixins';
+
+@include sogrid-bordered();
+
+@include sogrid-bordered-editor-breakpoints();

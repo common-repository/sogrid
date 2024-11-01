@@ -1,0 +1,221 @@
+@mixin sogrid-pinterest {
+
+    .sogrid--pinterest{
+        color: #494949;
+
+        .sogrid__posts{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .sogrid__entry{
+            padding: 0 15px;
+            margin-bottom: 30px;
+            border-radius: 3px;
+        }
+
+        .sogrid__entry__wrapper{
+            background-color: white;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        .sogrid__entry__thumbnail_wrapper{
+            padding: 20px;
+            border-bottom: 1px solid #e8e8e8;
+        }
+
+        .sogrid__entry__thumbnail{
+            display: block;
+            margin-bottom: 0;
+        }
+
+        .sogrid__entry__content{
+            padding: 20px;
+            background-color: #FAFAFA;
+        }
+
+        .sogrid__entry__categories{
+            color: #ff7675;
+        }
+
+        .sogrid__entry__meta{
+            color: #494949;
+        }
+
+        .sogrid__entry__title a{
+            color: #191919;
+        }
+
+        .sogrid__entry__excerpt{
+            margin-top: 1.3em;
+        }
+
+    }
+
+}
+
+@mixin sogrid-pinterest-editor-breakpoints {
+    
+    .sogrid--pinterest[data-desktop="1"]{
+        .sogrid__entry{
+            flex-basis: 100%;
+            max-width: 100%;
+        }
+    }
+
+    .sogrid--pinterest[data-desktop="2"]{
+        .sogrid__entry{
+            flex-basis: 50%;
+            max-width: 50%;
+        }
+    }
+    
+    .sogrid--pinterest[data-desktop="3"]{
+        .sogrid__entry{
+            flex-basis: 33.3332%;
+            max-width: 33.3332%;
+        }
+    }
+
+    .sogrid--pinterest[data-desktop="4"]{
+        .sogrid__entry{
+            flex-basis: 25%;
+            max-width: 25%;
+        }
+    }
+
+    .sogrid--pinterest[data-desktop="5"]{
+        .sogrid__entry{
+            flex-basis: 20%;
+            max-width: 20%;
+        }
+    }
+
+}
+
+@mixin sogrid-pinterest-breakpoints {
+    
+    .sogrid--pinterest{
+        .sogrid__entry{
+            flex-basis: 100%;
+            max-width: 100%;
+        }
+    }
+
+    @media all and (min-width: $mobile) {
+        .sogrid--pinterest[data-mobile="1"]{
+            .sogrid__entry{
+                flex-basis: 100%;
+                max-width: 100%;
+            }
+        }
+    
+        .sogrid--pinterest[data-mobile="2"]{
+            .sogrid__entry{
+                flex-basis: 50%;
+                max-width: 50%;
+            }
+        }
+        
+        .sogrid--pinterest[data-mobile="3"]{
+            .sogrid__entry{
+                flex-basis: 33.3332%;
+                max-width: 33.3332%;
+            }
+        }
+    
+        .sogrid--pinterest[data-mobile="4"]{
+            .sogrid__entry{
+                flex-basis: 25%;
+                max-width: 25%;
+            }
+        }
+    
+        .sogrid--pinterest[data-mobile="5"]{
+            .sogrid__entry{
+                flex-basis: 20%;
+                max-width: 20%;
+            }
+        }
+    
+    }
+
+    @media all and (min-width: $tablet) {
+        .sogrid--pinterest[data-tablet="1"]{
+            .sogrid__entry{
+                flex-basis: 100%;
+                max-width: 100%;
+            }
+        }
+    
+        .sogrid--pinterest[data-tablet="2"]{
+            .sogrid__entry{
+                flex-basis: 50%;
+                max-width: 50%;
+            }
+        }
+        
+        .sogrid--pinterest[data-tablet="3"]{
+            .sogrid__entry{
+                flex-basis: 33.3332%;
+                max-width: 33.3332%;
+            }
+        }
+    
+        .sogrid--pinterest[data-tablet="4"]{
+            .sogrid__entry{
+                flex-basis: 25%;
+                max-width: 25%;
+            }
+        }
+    
+        .sogrid--pinterest[data-tablet="5"]{
+            .sogrid__entry{
+                flex-basis: 20%;
+                max-width: 20%;
+            }
+        }
+
+    }
+
+    @media all and (min-width: $desktop) {
+        .sogrid--pinterest[data-desktop="1"]{
+            .sogrid__entry{
+                flex-basis: 100%;
+                max-width: 100%;
+            }
+        }
+    
+        .sogrid--pinterest[data-desktop="2"]{
+            .sogrid__entry{
+                flex-basis: 50%;
+                max-width: 50%;
+            }
+        }
+        
+        .sogrid--pinterest[data-desktop="3"]{
+            .sogrid__entry{
+                flex-basis: 33.3332%;
+                max-width: 33.3332%;
+            }
+        }
+    
+        .sogrid--pinterest[data-desktop="4"]{
+            .sogrid__entry{
+                flex-basis: 25%;
+                max-width: 25%;
+            }
+        }
+    
+        .sogrid--pinterest[data-desktop="5"]{
+            .sogrid__entry{
+                flex-basis: 20%;
+                max-width: 20%;
+            }
+        }
+        
+    }
+
+}
+

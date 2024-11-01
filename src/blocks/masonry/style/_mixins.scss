@@ -1,0 +1,147 @@
+@mixin sogrid-masonry {
+
+    .sogrid--masonry{
+        color: #494949;
+
+        .sogrid__posts{
+            position: relative;
+        }
+
+        .sogrid__entry{
+            position: relative;
+            display: block; /** fixes column-count height issue **/
+            width: 100%; /** fixes column-count height issue **/
+            padding: 0; /** fixes column-count height issue **/
+            margin-bottom: 30px;
+            break-inside: avoid-column;
+            overflow: hidden; /** fixes button issue goes right/left **/
+        }
+
+        .sogrid__entry__thumbnail{
+            margin-bottom: 1em;
+            display: block;
+
+            img{
+                display: block;
+            }
+        }
+
+    }
+
+}
+
+@mixin sogrid-masonry-editor-breakpoints {
+
+    .sogrid--masonry[data-desktop="1"] .sogrid__posts{
+        column-gap: unset;
+        column-count: 1;
+    }
+
+    .sogrid--masonry[data-desktop="2"] .sogrid__posts{
+        column-count: 2;
+    }
+    
+    .sogrid--masonry[data-desktop="3"] .sogrid__posts{
+        column-count: 3;
+    }
+
+    .sogrid--masonry[data-desktop="4"] .sogrid__posts{
+        column-count: 4;
+    }
+
+    .sogrid--masonry[data-desktop="5"] .sogrid__posts{
+        column-count: 5;
+    }
+
+}
+
+@mixin sogrid-masonry-breakpoints {
+
+    @media all and (min-width: $mobile) {
+
+        .sogrid--masonry[data-mobile="1"] .sogrid__posts{
+            column-gap: unset;
+            column-count: 1;
+        }
+
+        .sogrid--masonry[data-mobile="2"] .sogrid__posts{
+            column-count: 2;
+            column-gap: 30px; /** fixes column-count height issue **/
+        }
+        
+        .sogrid--masonry[data-mobile="3"] .sogrid__posts{
+            column-count: 3;
+            column-gap: 30px; /** fixes column-count height issue **/
+        }
+    
+        .sogrid--masonry[data-mobile="4"] .sogrid__posts{
+            column-count: 4;
+            column-gap: 30px; /** fixes column-count height issue **/
+        }
+    
+        .sogrid--masonry[data-mobile="5"] .sogrid__posts{
+            column-count: 5;
+            column-gap: 30px; /** fixes column-count height issue **/
+        }
+    
+    }
+
+    @media all and (min-width: $tablet) {
+
+        .sogrid--masonry[data-tablet="1"] .sogrid__posts{
+            column-gap: unset;
+            column-count: 1;
+        }
+
+        .sogrid--masonry[data-tablet="2"] .sogrid__posts{
+            column-count: 2;
+            column-gap: 30px; /** fixes column-count height issue **/
+        }
+        
+        .sogrid--masonry[data-tablet="3"] .sogrid__posts{
+            column-count: 3;
+            column-gap: 30px; /** fixes column-count height issue **/
+        }
+    
+        .sogrid--masonry[data-tablet="4"] .sogrid__posts{
+            column-count: 4;
+            column-gap: 30px; /** fixes column-count height issue **/
+        }
+    
+        .sogrid--masonry[data-tablet="5"] .sogrid__posts{
+            column-count: 5;
+            column-gap: 30px; /** fixes column-count height issue **/
+        }
+
+    }
+
+    @media all and (min-width: $desktop) {
+
+        .sogrid--masonry[data-desktop="1"] .sogrid__posts{
+            column-gap: unset;
+            column-count: 1;
+        }
+
+        .sogrid--masonry[data-desktop="2"] .sogrid__posts{
+            column-count: 2;
+            column-gap: 30px; /** fixes column-count height issue **/
+        }
+        
+        .sogrid--masonry[data-desktop="3"] .sogrid__posts{
+            column-count: 3;
+            column-gap: 30px; /** fixes column-count height issue **/
+        }
+    
+        .sogrid--masonry[data-desktop="4"] .sogrid__posts{
+            column-count: 4;
+            column-gap: 30px; /** fixes column-count height issue **/
+        }
+        
+        .sogrid--masonry[data-desktop="5"] .sogrid__posts{
+            column-count: 5;
+            column-gap: 30px; /** fixes column-count height issue **/
+        }
+        
+    }
+
+}

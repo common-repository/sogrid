@@ -1,0 +1,462 @@
+# Copyright (C) 2020 Sabri Taieb
+# This file is distributed under the same license as the Sogrid - Post Grid Layouts With Pagination plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Sogrid - Post Grid Layouts With Pagination 1.5.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/sogrid\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2020-03-09T09:50:11+01:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.2.0\n"
+"X-Domain: sogrid\n"
+
+#. Plugin Name of the plugin
+msgid "Sogrid - Post Grid Layouts With Pagination"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://delabon.com/plugin/sogrid"
+msgstr ""
+
+#. Description of the plugin
+msgid "Multiple grid design blocks."
+msgstr ""
+
+#. Author of the plugin
+msgid "Sabri Taieb"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://delabon.com/"
+msgstr ""
+
+#: src/Helpers.php:410
+#: src/blocks/bordered/index.php:175
+#: src/blocks/pinterest-masonry/index.php:163
+#: src/blocks/oos2/index.php:163
+#: src/blocks/oos1/index.php:163
+#: src/blocks/classic/index.php:163
+#: src/blocks/pinterest/index.php:163
+#: src/blocks/normal/index.php:171
+#: src/blocks/masonry/index.php:171
+#: src/blocks/tos1/index.php:163
+msgid "Read More"
+msgstr ""
+
+#: src/admin-panel/views/tabs/settings.php:25
+msgid "Excerpt Max Words"
+msgstr ""
+
+#: src/admin-panel/views/tabs/settings.php:36
+msgid "Save"
+msgstr ""
+
+#: src/admin-panel/views/menu.php:7
+msgid "Getting Started"
+msgstr ""
+
+#: src/admin-panel/views/menu.php:13
+msgid "Settings"
+msgstr ""
+
+#: src/admin-panel/views/menu.php:19
+msgid "Plugins"
+msgstr ""
+
+#: src/admin-panel/views/menu.php:25
+msgid "Change Log"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/components/ResponsiveSettings.js:50
+msgid "Responsive Settings"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/components/ResponsiveSettings.js:83
+msgid "Mobile Columns"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/components/ResponsiveSettings.js:93
+msgid "Mobile Font Size"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/components/ResponsiveSettings.js:111
+msgid "Tablet Columns"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/components/ResponsiveSettings.js:121
+msgid "Tablet Font Size"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/components/ResponsiveSettings.js:140
+msgid "Desktop Columns"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/components/ResponsiveSettings.js:150
+msgid "Desktop Font Size"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/components/DisplaySettings.js:13
+msgid "Display Settings"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/components/DisplaySettings.js:19
+msgid "Bordered Thumbnail?"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/components/DisplaySettings.js:27
+msgid "Display Author?"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/components/DisplaySettings.js:35
+msgid "Display Date?"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/components/DisplaySettings.js:43
+msgid "Display Excerpt?"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/components/DisplaySettings.js:51
+msgid "Display Categories?"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/components/DisplaySettings.js:59
+msgid "Display Read More Button?"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/components/DisplaySettings.js:67
+msgid "Read More Button Text"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/components/ColorSettings.js:14
+msgid "Color Settings"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/components/ColorSettings.js:20
+msgid "Background"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/components/ColorSettings.js:28
+msgid "Border"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/components/ColorSettings.js:36
+msgid "Bottom Border"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/components/ColorSettings.js:43
+#: src/components/CategoriesSettings.js:37
+msgid "Title"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/components/ColorSettings.js:49
+#: src/components/CategoriesSettings.js:35
+msgid "Author"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/components/ColorSettings.js:55
+msgid "Date"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/components/ColorSettings.js:61
+msgid "Categories"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/components/ColorSettings.js:67
+msgid "Excerpt"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/components/ColorSettings.js:74
+msgid "Read More Button"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/components/ColorSettings.js:82
+msgid "Read More Button Background"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/components/CategoriesSettings.js:16
+msgid "Posts & Categories"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/components/CategoriesSettings.js:21
+msgid "Number of Posts"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/components/CategoriesSettings.js:31
+msgid "Posts Order"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/components/CategoriesSettings.js:34
+msgid "Latest"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/components/CategoriesSettings.js:36
+msgid "Modified"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/components/CategoriesSettings.js:38
+msgid "Random (Only Frontend)"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/components/CategoriesSettings.js:45
+msgid "Select Categories"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/components/PaddingMarginSettings.js:19
+msgid "Padding/Margin Settings"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/components/PaddingMarginSettings.js:25
+msgid "Margin Top"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/components/PaddingMarginSettings.js:36
+msgid "Margin Bottom"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/components/PaddingMarginSettings.js:47
+msgid "Padding Top"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/components/PaddingMarginSettings.js:58
+msgid "Padding Bottom"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/components/PaddingMarginSettings.js:69
+msgid "Padding Left"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/components/PaddingMarginSettings.js:80
+msgid "Padding Right"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/components/PaginationSettings.js:16
+msgid "Pagination Settings"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/components/PaginationSettings.js:22
+msgid "Enable Pagination"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/components/PaginationSettings.js:23
+msgid "Enabled"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/components/PaginationSettings.js:23
+msgid "Disabled"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/components/PaginationSettings.js:31
+msgid "Max Pages"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/components/PaginationSettings.js:41
+msgid "Position"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/components/PaginationSettings.js:45
+msgid "Top"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/components/PaginationSettings.js:46
+msgid "Bottom"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/components/PaginationSettings.js:53
+msgid "Numbers Color"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/components/PaginationSettings.js:61
+msgid "Numbers Background Color"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/components/PaginationSettings.js:69
+msgid "Active Number Color"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/components/PaginationSettings.js:77
+msgid "Active Number Background Color"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/blocks/normal/index.js:11
+msgid "Normal Grid - Sogrid"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/blocks/normal/index.js:18
+msgid "normal"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/blocks/bordered/index.js:19
+#: src/blocks/classic/index.js:19
+#: src/blocks/pinterest/index.js:19
+#: src/blocks/normal/index.js:19
+#: src/blocks/masonry/index.js:19
+#: src/blocks/overlay/index.js:19
+msgid "grid"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/blocks/bordered/index.js:20
+#: src/blocks/pinterest-masonry/index.js:20
+#: src/blocks/oos2/index.js:20
+#: src/blocks/oos1/index.js:20
+#: src/blocks/classic/index.js:20
+#: src/blocks/pinterest/index.js:20
+#: src/blocks/normal/index.js:20
+#: src/blocks/masonry/index.js:20
+#: src/blocks/tos1/index.js:20
+#: src/blocks/overlay/index.js:20
+msgid "posts"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/blocks/masonry/index.js:11
+msgid "Masonry - Sogrid"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/blocks/masonry/index.js:18
+msgid "masonry"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/blocks/classic/index.js:11
+msgid "Classic - Sogrid"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/blocks/classic/index.js:18
+msgid "classic"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/blocks/overlay/index.js:11
+msgid "Overlay Grid - Sogrid"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/blocks/overlay/index.js:18
+msgid "overlay"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/blocks/bordered/index.js:11
+msgid "Bordered Grid - Sogrid"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/blocks/bordered/index.js:18
+msgid "bordered"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/blocks/pinterest/index.js:11
+msgid "Pinterest Grid - Sogrid"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/blocks/pinterest-masonry/index.js:18
+#: src/blocks/pinterest/index.js:18
+msgid "pinterest"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/blocks/pinterest-masonry/index.js:11
+msgid "Pinterest Masonry - Sogrid"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/blocks/pinterest-masonry/index.js:19
+msgid "Masonry"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/blocks/oos1/index.js:11
+msgid "One & Others - Style 1 - Sogrid"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/blocks/oos2/index.js:18
+#: src/blocks/oos1/index.js:18
+msgid "one"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/blocks/oos2/index.js:19
+#: src/blocks/oos1/index.js:19
+#: src/blocks/tos1/index.js:19
+msgid "others"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/blocks/oos2/index.js:11
+msgid "One & Others - Style 2 - Sogrid"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/blocks/tos1/index.js:11
+msgid "Two & Others - Sogrid"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: src/blocks/tos1/index.js:18
+msgid "two"
+msgstr ""

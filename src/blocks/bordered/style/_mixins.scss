@@ -1,0 +1,197 @@
+@mixin sogrid-bordered {
+
+    .sogrid--bordered{
+        color: #494949;
+
+        .sogrid__posts{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .sogrid__entry{
+            padding: 0 15px;
+            margin-bottom: 30px;
+        }
+
+        .sogrid__entry__thumbnail{
+            margin-bottom: 0;
+        }
+
+        .sogrid__entry__content{
+            padding: 20px;
+            border: 1px solid #eaeaea;
+        }
+
+        .sogrid__entry__categories{
+            margin-bottom: 0.3em; 
+        }
+
+    }
+
+}
+
+@mixin sogrid-bordered-editor-breakpoints {
+    
+    .sogrid--bordered[data-desktop="1"]{
+        .sogrid__entry{
+            flex-basis: 100%;
+            max-width: 100%;
+        }
+    }
+
+    .sogrid--bordered[data-desktop="2"]{
+        .sogrid__entry{
+            flex-basis: 50%;
+            max-width: 50%;
+        }
+    }
+    
+    .sogrid--bordered[data-desktop="3"]{
+        .sogrid__entry{
+            flex-basis: 33.3332%;
+            max-width: 33.3332%;
+        }
+    }
+
+    .sogrid--bordered[data-desktop="4"]{
+        .sogrid__entry{
+            flex-basis: 25%;
+            max-width: 25%;
+        }
+    }
+
+    .sogrid--bordered[data-desktop="5"]{
+        .sogrid__entry{
+            flex-basis: 20%;
+            max-width: 20%;
+        }
+    }
+
+}
+
+@mixin sogrid-bordered-breakpoints {
+    
+    .sogrid--bordered{
+        .sogrid__entry{
+            flex-basis: 100%;
+            max-width: 100%;
+        }
+    }
+
+    @media all and (min-width: $mobile) {
+        .sogrid--bordered[data-mobile="1"]{
+            .sogrid__entry{
+                flex-basis: 100%;
+                max-width: 100%;
+            }
+        }
+    
+        .sogrid--bordered[data-mobile="2"]{
+            .sogrid__entry{
+                flex-basis: 50%;
+                max-width: 50%;
+            }
+        }
+        
+        .sogrid--bordered[data-mobile="3"]{
+            .sogrid__entry{
+                flex-basis: 33.3332%;
+                max-width: 33.3332%;
+            }
+        }
+    
+        .sogrid--bordered[data-mobile="4"]{
+            .sogrid__entry{
+                flex-basis: 25%;
+                max-width: 25%;
+            }
+        }
+    
+        .sogrid--bordered[data-mobile="5"]{
+            .sogrid__entry{
+                flex-basis: 20%;
+                max-width: 20%;
+            }
+        }
+    
+    }
+
+    @media all and (min-width: $tablet) {
+        .sogrid--bordered[data-tablet="1"]{
+            .sogrid__entry{
+                flex-basis: 100%;
+                max-width: 100%;
+            }
+        }
+    
+        .sogrid--bordered[data-tablet="2"]{
+            .sogrid__entry{
+                flex-basis: 50%;
+                max-width: 50%;
+            }
+        }
+        
+        .sogrid--bordered[data-tablet="3"]{
+            .sogrid__entry{
+                flex-basis: 33.3332%;
+                max-width: 33.3332%;
+            }
+        }
+    
+        .sogrid--bordered[data-tablet="4"]{
+            .sogrid__entry{
+                flex-basis: 25%;
+                max-width: 25%;
+            }
+        }
+    
+        .sogrid--bordered[data-tablet="5"]{
+            .sogrid__entry{
+                flex-basis: 20%;
+                max-width: 20%;
+            }
+        }
+
+    }
+
+    @media all and (min-width: $desktop) {
+        .sogrid--bordered[data-desktop="1"]{
+            .sogrid__entry{
+                flex-basis: 100%;
+                max-width: 100%;
+            }
+        }
+    
+        .sogrid--bordered[data-desktop="2"]{
+            .sogrid__entry{
+                flex-basis: 50%;
+                max-width: 50%;
+            }
+        }
+        
+        .sogrid--bordered[data-desktop="3"]{
+            .sogrid__entry{
+                flex-basis: 33.3332%;
+                max-width: 33.3332%;
+            }
+        }
+    
+        .sogrid--bordered[data-desktop="4"]{
+            .sogrid__entry{
+                flex-basis: 25%;
+                max-width: 25%;
+            }
+        }
+    
+        .sogrid--bordered[data-desktop="5"]{
+            .sogrid__entry{
+                flex-basis: 20%;
+                max-width: 20%;
+            }
+        }
+        
+    }
+
+}
+

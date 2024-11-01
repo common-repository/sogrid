@@ -1,0 +1,156 @@
+@mixin sogrid-oos1 {
+
+    .sogrid--oos1{
+        color: #494949;
+        
+        .sogrid__posts{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .sogrid__one,
+        .sogrid__others{
+            flex-basis: 100%;
+            max-width: 100%;
+            border: 1px solid #cccccc;
+        }
+        
+        .sogrid__entry{
+            padding: 0 15px;
+        }
+
+        .sogrid__one .sogrid__entry{
+            padding: 15px;
+        }
+
+        .sogrid__entry__thumbnail{
+            margin-bottom: 1em;
+            display: block;
+        }
+
+        .sogrid__others{
+            border-left: 0;
+            
+            .sogrid__entry{
+                font-size: 0.9em;
+                display: flex;
+                flex-wrap: wrap;
+                border-bottom: 1px solid #cccccc;
+                margin-bottom: 0;
+                padding: 15px 0 15px 15px;   
+
+                &:last-child{
+                    border-bottom: 0;
+                }
+            }
+
+            .sogrid__entry__thumbnail{
+                flex: 1;
+                margin-bottom: 0;
+            }
+
+            .sogrid__entry__content{
+                flex: 2;
+                padding: 0 15px;
+            }
+
+            .sogrid__entry__title a{
+                margin-bottom: 0.1em;
+            }
+
+            .sogrid__entry__categories,
+            .sogrid__entry__readmore,            
+            .sogrid__entry__author,            
+            .sogrid__entry__excerpt{
+                display: none;
+            }
+
+        }
+
+        .sogrid__pagination{
+            border: 1px solid #cccccc;
+        }
+
+        .sogrid__pagination.__pos_bottom{
+            border-top: 0;
+        }
+
+        .sogrid__pagination.__pos_top{
+            border-bottom: 0;
+        }
+    }
+
+}
+
+@mixin sogrid-oos1-editor-breakpoints {
+
+    .sogrid--oos1[data-desktop="1"]{
+        .sogrid__one,
+        .sogrid__others{
+            flex: 0 1 100%;
+            max-width: 100%;
+        }
+    }
+
+    .sogrid--oos1[data-desktop="2"]{
+        .sogrid__one,
+        .sogrid__others{
+            flex: 1;
+            max-width: 100%;
+        }
+    }
+
+}
+
+@mixin sogrid-oos1-breakpoints {
+
+    @media all and (min-width: $mobile) {
+        .sogrid--oos1[data-mobile="1"]{
+            .sogrid__one,
+            .sogrid__others{
+                flex: 0 1 100%;
+            }
+        }
+
+        .sogrid--oos1[data-mobile="2"]{
+            .sogrid__one,
+            .sogrid__others{
+                flex: 1;
+            }
+        }
+    }
+
+    @media all and (min-width: $tablet) {
+        .sogrid--oos1[data-tablet="1"]{
+            .sogrid__one,
+            .sogrid__others{
+                flex: 0 1 100%;
+            }
+        }
+
+        .sogrid--oos1[data-tablet="2"]{
+            .sogrid__one,
+            .sogrid__others{
+                flex: 1;
+            }
+        }
+    }
+
+    @media all and (min-width: $desktop) {
+        .sogrid--oos1[data-desktop="1"]{
+            .sogrid__one,
+            .sogrid__others{
+                flex: 0 1 100%;
+            }
+        }
+
+        .sogrid--oos1[data-desktop="2"]{
+            .sogrid__one,
+            .sogrid__others{
+                flex: 1;
+            }
+        }
+    }
+
+}
+

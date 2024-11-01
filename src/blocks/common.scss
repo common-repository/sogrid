@@ -1,0 +1,397 @@
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+
+// Colors.
+$black: rgb(41, 41, 41);
+$white: #f4f4f4;
+$gray: #dedede;
+$green: #bada55;
+$red: orangered;
+
+
+// Devices 
+$mobile: 576px;
+$tablet: 768px;
+$desktop: 992px;
+$widescreen: 1200px;
+
+
+// 
+// Border-box
+// 
+.sogrid,
+.sogrid *,
+.sogrid *:before,
+.sogrid *:after{
+    box-sizing:  border-box !important;
+}
+
+.sogrid{
+    margin-bottom: 2em;
+}
+
+
+// 
+// Premium
+// 
+.sogrid__premium{
+    background: #e84393;
+    color: white;
+    padding: 2px 6px;
+    margin: 0 5px;
+    border-radius: 8px;
+}
+
+// 
+// Inspector :: Tabs
+// 
+.sogrid-tabs {
+    justify-content: flex-start;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 0;
+    top: 0;
+
+    > [role="tablist"]{
+        margin-top: 15px;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+    }
+
+    > [role="tabpanel"]{
+        padding: 20px 0 0;
+    }
+
+    .sogrid-tab{
+        background: 0 0;
+        border: none;
+        border-radius: 0;
+        cursor: pointer;
+        height: 48px;
+        padding: 3px 15px;
+        margin-left: 0;
+        font-weight: 400;
+        color: #191e23;
+        outline-offset: -1px;
+        outline: none;
+    }
+
+    .sogrid-tab-active{
+        background: #f1f1f1;
+        color: black;
+    }
+}
+
+
+// 
+// Inspector :: Categories Control
+// 
+.sogrid-categories-list{
+    background: #f1f1f1;
+    
+    > [role=menu] {
+        border: 1px solid #e2e4e7;
+        border-bottom: none;
+        max-height: 200px;
+        overflow-x: auto;
+        padding: 0;
+    }
+}
+
+.sogrid-categories-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 12px 16px;
+    background: #fff;
+    color: #555d66;
+    outline: none;
+
+    &:hover{
+        color: #191e23;
+        background: #e1e1e1;
+        box-shadow: none;
+    }
+
+    &[data-depth="0"],
+    &[data-depth="0"]:hover{
+        border-top: 1px solid #e2e4e7 !important;
+    }
+
+    &[data-depth="1"] .sogrid-categories-item-label:before{
+        content: ' -- ';
+    }
+
+    &[data-depth="2"] .sogrid-categories-item-label:before{
+        content: ' ---- ';
+    }
+
+    &[data-depth="3"] .sogrid-categories-item-label:before{
+        content: ' ------ ';
+    }
+
+    &[data-depth="4"] .sogrid-categories-item-label:before{
+        content: ' -------- ';
+    }
+
+}
+
+
+// 
+// Inspector :: Background Controls
+//
+.dlb-background-controls {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .components-base-control{
+        width: 100%;
+    }
+
+}
+
+.dlb-component-upload,
+.dlb-component-color{
+    margin-bottom: 25px;
+    flex-basis: 100%;
+    width: 100%;
+}
+
+.dlb-component-color{
+    display: flex;
+    flex-direction: column;
+
+    .__indicator__{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 15px;
+
+        .__color__{
+            width: 40px;
+            height: 20px;
+            border: 2px solid #e1e1e1;
+            overflow: hidden;
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+    }
+    
+}
+
+
+// 
+// Post Parts
+// 
+
+.sogrid{
+    font-size: 16px;
+}
+
+.sogrid__entry{
+    line-height: 1.5;
+}
+
+.sogrid__entry__title a,
+.sogrid__entry__categories a,
+.sogrid__entry__readmore,
+.sogrid__entry__author{
+    text-decoration: none !important;
+    border: 0 !important;
+    outline: 0 !important;
+    box-shadow: none;
+    line-height: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+
+    &:focus,
+    &:hover{
+        opacity: 0.7;
+    }
+
+}
+
+.sogrid__entry__thumbnail {
+    align-self: flex-start;
+    text-decoration: none !important;
+    outline: none !important;
+    overflow: hidden;
+    display: block;
+    position: relative;
+
+    &.__bordered{
+        border-radius: 5px;
+    }
+
+    &:hover,
+    &:focus,
+    &:visited{
+        .sogrid__entry__format{
+            text-decoration: none !important;
+            outline: 0 !important;
+            border: 0 !important;
+            box-shadow: none !important;        
+        }
+    }
+
+    &:hover .sogrid__entry__format{
+        opacity: 1;
+
+        span{
+            transform: scale(1);
+        }
+    }
+    
+    img{
+        display: block;
+        margin: 0 auto !important;
+        padding: 0 !important;
+        backface-visibility: hidden;
+        border: 0;
+    }
+
+    .sogrid__entry__format{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 200ms;
+        opacity: 0;
+        backface-visibility: hidden;
+        
+        span{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 44px;
+            height: 44px;
+            border: 3px solid white;
+            border-radius: 100%;
+            transition: all 200ms;
+            transform: scale(0);
+        }
+
+        svg{
+            fill: white;
+        }
+    }
+}
+
+.sogrid__entry__title {
+    font-size: 1.1em !important;
+    line-height: 1.5 !important;
+    font-weight: bold;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: block;
+    color: #5e35b1;
+    border: 0;
+
+    a{
+        display: block !important;
+        margin: 0 0 0.3em;
+    }
+}
+
+.sogrid__entry__categories{
+    color: #e53935;
+    display: block;
+    margin: 0 0 0.2em;
+    font-size: 0.9em;
+
+    a{
+        color: inherit;
+        
+        &:after{
+            content: ', ';
+        }
+
+        &:last-child:after{
+            content: '';
+        }
+    }
+
+}
+
+.sogrid__entry__excerpt {
+    display: block;
+    font-size: 1em;
+    margin: 0 0 1em;
+}
+
+.sogrid__entry__readmore {
+    line-height: 1.1 !important;
+    font-size: 0.87em !important;
+    font-size: normal;
+    padding: 0.7em 1em;
+    background-color: #d32f2f;
+    color: white;
+    display: inline-block;
+    border-radius: 3px;
+    border: 0 !important;
+    outline: 0 !important;
+}
+
+.sogrid__entry__meta {
+    margin: 0 0 1em;
+    font-size: 0.9em;
+    color: #777;
+
+    .sogrid__entry__author{
+        color: #777;
+        font-weight: bold;
+        margin-right: 10px;
+        text-transform: capitalize;
+    }
+}
+
+
+// 
+// Pagination
+// 
+
+.sogrid__pagination{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 15px;
+}
+
+.sogrid__pagination span{
+    border: 0;
+    color: #333333;
+    background-color: #e9e9e9;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    padding: 4px 6px;
+    margin: 0 3px;
+    font-size: 0.9em;
+    outline: none !important;
+    text-decoration: none !important;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sogrid__pagination span:hover{
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.sogrid__pagination span.__active{
+    cursor: default;
+    background-color: #d32f2f;
+    color: #ffffff;
+}

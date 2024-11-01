@@ -1,0 +1,163 @@
+@mixin sogrid-overlay {
+
+    .sogrid--overlay{
+        display: block;
+        font-size: 16px;
+        color: #494949;
+        
+        .sogrid__posts{
+            column-gap: 0;
+        }
+
+        .sogrid__entry{
+            margin: 0;
+            padding: 0;
+            position: relative;
+            break-inside: avoid;
+
+            &:hover {
+                .sogrid__entry__overlay{
+                    background-color: rgba($color: #000000, $alpha: 0.9);        
+                }
+            }
+        }
+
+        .sogrid__entry__overlay__link{
+            position: absolute !important;
+            top: 0 !important;
+            left: 0 !important;
+            bottom: 0 !important;
+            right: 0 !important; 
+            border: 0 !important;
+            outline: 0 !important;
+            box-shadow: none !important;
+            background: transparent !important;           
+        }
+
+        .sogrid__entry__overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: rgba($color: #000000, $alpha: 0.3);
+            transition: all 200ms ease-out;
+        }
+        
+        .sogrid__entry__title a{
+            font-size: 1.1em;
+            margin: 0;
+            padding: 0 10px;
+            color: white;
+        }
+
+        .sogrid__entry__meta{
+            margin: 0.5em 0 0;
+            color: #eeeeee;
+        }
+
+    }
+
+}
+
+@mixin sogrid-overlay-editor-breakpoints {
+    
+    .sogrid--overlay{
+        .sogrid__entry{
+            width: 100%;
+        }
+    }
+    
+    .sogrid--overlay[data-desktop="2"] .sogrid__posts{
+        column-count: 2;
+    }
+    
+    .sogrid--overlay[data-desktop="3"] .sogrid__posts{
+        column-count: 3;
+    }
+
+    .sogrid--overlay[data-desktop="4"] .sogrid__posts{
+        column-count: 4;
+    }
+
+    .sogrid--overlay[data-desktop="5"] .sogrid__posts{
+        column-count: 5;
+    }
+
+}
+
+@mixin sogrid-overlay-breakpoints {
+    
+    .sogrid--overlay{
+        .sogrid__entry{
+            width: 100%;
+        }
+    }
+
+    @media all and (min-width: $mobile) {
+
+        .sogrid--overlay[data-mobile="2"] .sogrid__posts{
+            column-count: 2;
+        }
+        
+        .sogrid--overlay[data-mobile="3"] .sogrid__posts{
+            column-count: 3;
+        }
+    
+        .sogrid--overlay[data-mobile="4"] .sogrid__posts{
+            column-count: 4;
+        }
+    
+        .sogrid--overlay[data-mobile="5"] .sogrid__posts{
+            column-count: 5;
+        }
+    
+    }
+
+    @media all and (min-width: $tablet) {
+
+        .sogrid--overlay[data-tablet="2"] .sogrid__posts{
+            column-count: 2;
+        }
+        
+        .sogrid--overlay[data-tablet="3"] .sogrid__posts{
+            column-count: 3;
+        }
+    
+        .sogrid--overlay[data-tablet="4"] .sogrid__posts{
+            column-count: 4;
+        }
+    
+        .sogrid--overlay[data-tablet="5"] .sogrid__posts{
+            column-count: 5;
+        }
+
+    }
+
+    @media all and (min-width: $desktop) {
+
+        .sogrid--overlay[data-desktop="2"] .sogrid__posts{
+            column-count: 2;
+        }
+        
+        .sogrid--overlay[data-desktop="3"] .sogrid__posts{
+            column-count: 3;
+        }
+    
+        .sogrid--overlay[data-desktop="4"] .sogrid__posts{
+            column-count: 4;
+        }
+    
+        .sogrid--overlay[data-desktop="5"] .sogrid__posts{
+            column-count: 5;
+        }
+        
+    }
+
+}
